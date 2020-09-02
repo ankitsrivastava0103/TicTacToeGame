@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tae Toe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="player">
+        <div class="player-heading">
+            <h3>Enter your name to start playing.</h3>
+        </div>
+        <div class="player-details">
+            <div>
+                <input type="text" id="player1" class="form-control" placeholder="Player 1" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div>
+                <input type="text" id="player2" class="form-control" placeholder="Player 2" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class="button">
+            <button id="start" type="button" onclick="startGame()" class="btn btn-primary">Start Game !</button>
+        </div>
+    </section>
+    <section id="remove" class="game hide">
+        <div class="game-info">
+            <p id="turn">Whoes Trun is it??</p>
+        </div>
+        <div class="game-container">
+            <div class="game-row">
+                <div class="game-coloum one"></div>
+                <div class="game-coloum two"></div>
+                <div class="game-coloum three"></div>
+            </div>
+            <div class="game-row">
+                <div class="game-coloum four"></div>
+                <div class="game-coloum five"></div>
+                <div class="game-coloum six"></div>
+            </div>
+            <div class="game-row">
+                <div class="game-coloum seven"></div>
+                <div class="game-coloum eight"></div>
+                <div class="game-coloum nine"></div>
+            </div>
+        </div>
+        <form>
+            <div class="button extra">
+                <button onClick="window.location.reload()" type="submit" class="btn btn-secondary">Restart Game</button>
+            </div>
+        </form>
+    </section>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script> -->
+    <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>
